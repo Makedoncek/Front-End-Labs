@@ -1,0 +1,30 @@
+table {
+    width:100%;
+}
+
+table td, table tr {
+ padding: 3px;
+ height: 30px;
+ border: 1px solid #595959;
+}
+
+.first {
+background-color: #848f8f;
+color:#FFFF23;
+font-size: 20px;
+}
+
+.second{
+background-color: #f5f584;
+color:#006400;
+}
+
+.first:hover{
+    background-color:#FFFF23;
+    color:#848f8f;
+}
+
+.second:hover{
+   background-color:#006400;
+   color:#f5f584;
+}
