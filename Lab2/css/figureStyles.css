@@ -1,0 +1,84 @@
+/* position figure styles */ 
+.targetPos { 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    background-color: transparent; 
+    border: 50px solid black; 
+    border-radius: 50%; 
+} 
+ 
+.inner-circlePos { 
+    position: absolute; 
+    width: 120px; 
+    height: 120px; 
+    background-color: black; 
+    border-radius: 50%; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -60px; 
+    margin-left: -60px; 
+} 
+ 
+.horizontalPos, .verticalPos { 
+    position: absolute; 
+    background-color: black; 
+} 
+ 
+.horizontalPos { 
+    top: 50%; 
+    left: 0; 
+    right: 0; 
+    height: 10px;  
+    margin-top: -5px;  
+} 
+ 
+.verticalPos { 
+    top: 0; 
+    bottom: 0; 
+    left: 50%; 
+    width: 10px; 
+    margin-left: -5px; 
+}
+
+
+/* transform figure styles */ 
+.targetTrans {
+    width: 240px;
+    height: 240px;
+    background-color: transparent;
+    border: 50px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-circleTrans {
+    width: 120px; 
+    height: 120px; 
+    background-color: black;
+    border-radius: 50%; 
+}
+
+.horizontalTrans, .verticalTrans {
+    background-color: black;
+    position: absolute;
+}
+
+.horizontalTrans {
+    width: 100%;
+    height: 10px;
+    transform: translateY(-5px);
+    left: 0;
+    top: 50%;
+}
+
+.verticalTrans {
+    width: 10px;
+    height: 100%;
+    transform: translateX(115px);
+    top: 0;
+    left: 0;
+}
