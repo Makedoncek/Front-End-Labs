@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма для заповнення даних</title>
+    <link rel="stylesheet" href="css/formStyle.css">
 </head>
 <body>
     <div class="container">
-		<div action="" class="form" id="add-form ">
-			<h1 class="form-title">Form</h1>
-			<form name="input-form" class="input-form" onsubmit="return false">
-				<input type="text" class="input-field" id="fullname" placeholder="Full Name">
-				<label class="wrong-input" for="fullname" hidden>Wrong Input  must be: "Hizhytskyi D.O".</label>
 
-				<input type="text" class="input-field" id="telephone" placeholder="Telephone Number">
-				<label class="wrong-input" for="telephone" hidden>Wrong Input must be: "XXX-XXX-XX-XX".</label>
-				
-				<input type="text" class="input-field" id="id-card" placeholder="ID-card">
-				<label class="wrong-input" for="id-card" hidden>Wrong Input must be: "XX№XXXXXX".</label>
+        <div action=""  id="form">
+            <h2 id="form-title">Особиста інформація</h2>
+            <form name="input-form" id="input-form" onsubmit="return false">
+                <input class="input-field" id="fullname" placeholder="ПІБ" type="text"></input>
 
-				<input type="text" class="input-field" id="department" placeholder="Department">
-				<label class="wrong-input" for="department" hidden>Wrong Input must be: "XXXX".</label>
+                <label class="wrong-input" for="fullname" hidden>Неправильний ПІБ. Приклад: "Савенко О.А.".</label>
+                
+                <input class="input-field" id="id-card"placeholder="ID-card" type="text"></input>
+                <label class="wrong-input" for="id-card" hidden>Неправильний номер ID-картки. Приклад:"ІІ №963432".</label>
+                
+                <input class="input-field" id="faculty"placeholder="Факультет" type="text"></input>
+                <label class="wrong-input" for="faculty" hidden>Неправильний факультет. Приклад:"ФІОТ".</label>
+    
+                <input class="input-field" id="birthday-date" placeholder="Дата народж." type="text"></input>
+                <label class="wrong-input" for="birthday-date" hidden>Неправильна дата. Приклад:"05.09.2003".</label>
 
-				<input type="text" class="input-field" id="date" placeholder="Date of birth">
-				<label class="wrong-input" for="date" hidden>Wrong Inputmust be: "XX.XX.XXXX".</label>
+                <input class="input-field" id="address" placeholder="Адреса" type="text"></input>
+                <label class="wrong-input" for="address" hidden>Неправильна адреса. Приклад:"м. Ірпінь".</label>
 
-				<button onclick="validateForm()" id="submit-button" class="send-btn">Enter</button>
-			</form>
-		</div>
-			<div id="data">
-					<ul id="data-ul">
-					</ul>
-			</div>
-		</div>
+                <input  onclick="validateForm()" id="send-button" class="input-field" type="submit" value="Відправити"></input>
+            </form>
+        </div>
+            
+            <div id="information">
+                <h2>Особисті дані користувача</h2>
+                <ul id="info-ul">
+                </ul>
+            </div>
 
+    </div>
+    <script src="scripts/form.js" ></script>
 </body>
-</html>
+</html>  
