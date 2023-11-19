@@ -1,5 +1,5 @@
 
-var ivanFranIntro = document.getElementById("ivanfran-intro");
+var ivanFranIntro = document.getElementById("first-hobby");
 ivanFranIntro.onclick = function(){
     if(ivanFranIntro.className == "orange")
         ivanFranIntro.className = "lime";
@@ -7,7 +7,7 @@ ivanFranIntro.onclick = function(){
         ivanFranIntro.className = "orange";
 };
 
-var ivanFranEnding = document.querySelectorAll("p#ivanfran-ending")
+var ivanFranEnding = document.querySelectorAll("li#second-hobby")
 ivanFranEnding[0].onclick = function(){
     if(ivanFranEnding[0].className == "orange")
         ivanFranEnding[0].className = "lime";
