@@ -1,18 +1,18 @@
 
-var ivanFranIntro = document.getElementById("first-hobby");
-ivanFranIntro.onclick = function(){
-    if(ivanFranIntro.className == "orange")
-        ivanFranIntro.className = "lime";
+var firstHobby = document.getElementById("first-hobby");
+firstHobby.onclick = function(){
+    if(firstHobby.className == "orange")
+        firstHobby.className = "lime";
     else
-        ivanFranIntro.className = "orange";
+        firstHobby.className = "orange";
 };
 
-var ivanFranEnding = document.querySelectorAll("li#second-hobby")
-ivanFranEnding[0].onclick = function(){
-    if(ivanFranEnding[0].className == "orange")
-        ivanFranEnding[0].className = "lime";
+var secondHobby = document.querySelectorAll("li#second-hobby")
+secondHobby[0].onclick = function(){
+    if(secondHobby[0].className == "orange")
+        secondHobby[0].className = "lime";
     else
-        ivanFranEnding[0].className = "orange";
+        secondHobby[0].className = "orange";
 };
 
 var imagesContainer = document.getElementById("images-container");
