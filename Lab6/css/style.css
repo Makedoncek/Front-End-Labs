@@ -46,7 +46,7 @@ button:hover {
 }
 
 .person-info {
-    flex-basis: 17%; /* Каждый элемент будет занимать 17% ширины родительского контейнера */
+    flex-basis: 17%; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
