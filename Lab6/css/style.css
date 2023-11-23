@@ -41,13 +41,12 @@ button:hover {
 
 .count-label {
     color: #ecf0f1; 
-	font-size: 20px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
-
 .person-info {
-    flex-basis: 17%;
+    flex-basis: 17%; /* Каждый элемент будет занимать 17% ширины родительского контейнера */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,11 +55,9 @@ button:hover {
 
 .person-picture {
     width: 100%;
-    height: 300px; /* Устанавливаем фиксированную высоту */
-    object-fit: cover; /* Сохраняет соотношение сторон и обрезает, чтобы изображение заполнило контейнер */
+    height: auto;
     border-bottom: 1px solid #ddd;
 }
-
 
 .person-info-item {
     padding: 10px;
@@ -68,5 +65,3 @@ button:hover {
     font-size: 16px;
     font-weight: 700;
 }
-
-
