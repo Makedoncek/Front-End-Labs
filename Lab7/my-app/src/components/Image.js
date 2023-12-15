@@ -1,24 +1,58 @@
-// Image.js
-import React from 'react';
-import '../components-styles/Image.css'
+import React, { useState } from 'react';
+import '../components-styles/Image.css';
 
 function Image() {
+  const [images, setImages] = useState([
+    'https://iftravel.com.ua//assets/gallery/6/ivano-frankivska-oblast1_small.jpg'
+  ]);
+  
+  const handleAddImage = () => { 
+     
+    const newImage = '/pictures/ivanfran2.jpg'; 
+    setImages((prevImages) => [...prevImages, newImage]);  
+  };
+  
+
+  const handleIncreaseSize = () => {
+    
+    const imagesElements = document.querySelectorAll('#images-container img');
+    imagesElements.forEach(image => {
+      image.width += 10;
+      image.height += 10;
+    });
+  };
+
+  const handleDecreaseSize = () => {
+    
+    const imagesElements = document.querySelectorAll('#images-container img');
+    imagesElements.forEach(image => {
+      image.width -= 10;
+      image.height -= 10;
+    });
+  };
+
+  const handleDeleteImage = () => {
+    
+    if (images.length > 1) {
+      const updatedImages = [...images];
+      updatedImages.pop();
+      setImages(updatedImages);
+    }
+  };
+
   return (
     <div>
       <div id="images-container">
-        <a href="https://www.mvk.if.ua">
-          <img
-            src="https://iftravel.com.ua//assets/gallery/6/ivano-frankivska-oblast1_small.jpg"
-            alt="Івано-Франківськ"
-          />
-        </a>
+        {images.map((imageUrl, index) => (
+          <img key={index} src={imageUrl} alt={`Івано-Франківськ ${index + 1}`} />
+        ))}
       </div>
 
       <div className="image-buttons">
-        <button>Додати зображення</button>
-        <button>Збільшити</button>
-        <button>Зменшити</button>
-        <button>Видалити зображення</button>
+        <button onClick={handleAddImage}>Додати зображення</button>
+        <button onClick={handleIncreaseSize}>Збільшити</button>
+        <button onClick={handleDecreaseSize}>Зменшити</button>
+        <button onClick={handleDeleteImage}>Видалити зображення</button>
       </div>
     </div>
   );

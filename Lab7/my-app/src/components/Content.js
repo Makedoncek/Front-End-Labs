@@ -40,8 +40,8 @@ class Content extends Component {
         </p>
         <h3>Хоббі:</h3>
         <ul>
-          <li id="first-hobby" >Спорт</li>
-          <li id="second-hobby" >Історія</li>
+          <li id="first-hobby">Спорт</li>
+          <li id="second-hobby">Історія</li>
           <li>Нумізматика</li>
           <li>Геополітика</li>
           <li>Кульова стрільба</li>
