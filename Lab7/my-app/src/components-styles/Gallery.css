@@ -1,0 +1,11 @@
+/* Gallery.css */
+.gallery {
+    text-align: center;
+  }
+  
+  .goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
