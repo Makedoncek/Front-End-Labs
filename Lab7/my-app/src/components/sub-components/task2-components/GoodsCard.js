@@ -1,4 +1,3 @@
-// GoodsCard.js
 import React from 'react';
 import "../../../components-styles/GoodsCard.css"
 
@@ -13,4 +12,3 @@ const GoodsCard = ({ photo, name, price }) => {
 };
 
 export default GoodsCard;
-    
