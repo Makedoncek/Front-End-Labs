@@ -1,17 +1,16 @@
 // App.js
 import React from 'react';
-import Header from './components/Header';
-import Content from './components/Content';
-import Image from './components/Image';
+import Task1 from './components/main-components/Task1';
+import Task2 from './components/main-components/Task2';
 
 function App() {
   return (
     <div>
-      <Header />
-      <Content />
-      <Image />
+      <Task2 />
     </div>
   );
 }
+
+
 
 export default App;

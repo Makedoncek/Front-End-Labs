@@ -1,6 +1,5 @@
-// Content.js
 import React, { Component } from 'react';
-import '../components-styles/Content.css';
+import '../../../components-styles/Content.css';
 
 class Content extends Component {
   componentDidMount() {
