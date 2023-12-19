@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../../components-styles/Image.css';
+import ivanfran2 from '../../../pictures/ivanfran2.jpg'
 
 function Image() {
   const [images, setImages] = useState([
@@ -8,7 +9,7 @@ function Image() {
   
   const handleAddImage = () => { 
      
-    const newImage = '/pictures/ivanfran2.jpg'; 
+    const newImage = ivanfran2; 
     setImages((prevImages) => [...prevImages, newImage]);  
   };
   
